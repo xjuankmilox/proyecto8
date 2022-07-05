@@ -1,0 +1,99 @@
+body{
+  background-color: #110f0fea;
+}
+header, .alert{
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    /* define el nombre de las líneas y las funciones de tamaño de línea de grid */
+    grid-template-columns: repeat(2,1fr);
+    /*Es el ancho del canal que separa las columnas de la grilla.*/
+    grid-gap: 50px;
+    margin-top: 10px;
+    margin-left: 370px;
+}
+.container-form h2{
+    color: rgb(255, 255, 255);
+    margin-left: 150px;
+    margin-bottom: 50px;
+    font-size: 35px
+}
+.container-form p{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.container-form a i{
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    /*usada para establecer el estilo del contorno de un elemento.*/
+    outline: 2px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-left: 180px;
+
+}
+.container-form .btn-enviar:hover{
+    background: #5b5b5b;
+}
