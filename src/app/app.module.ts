@@ -7,17 +7,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 //servicio
-import { ScriptService } from "./script.service";
+import { ScriptService } from "./services/script.service";
+import { ShopComponent } from './shop/shop.component';
 //fin servicio
+//externo
+import { NgxPayPalModule } from 'ngx-paypal';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPayPalModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAuth(()=> getAuth())
   ],
